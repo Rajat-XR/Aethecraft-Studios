@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --mytheme: rgb(151, 28, 24);
+    --mybackground: #fadddd;
+}
+
+body {
+    margin: 0;
+    background: var(--mybackground);
+    font-family: "Poppins";
+}
+
+.navbar {
+    background: white;
+    padding: 1em;
+
+    .logo {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        font-size: 1.8em;
+
+        .company {
+            color: var(--mytheme);
+        }
+    }
+
+    .logo:hover {
+        color: var(--mytheme);
+    }
+
+    .company:hover {
+        color: black;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu {
+    cursor: pointer;
+}
+
+section {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 0em;
+}
+
+a {
+    color: black;
+}
+
+.hero {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+
+    .subhead {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: grey;
+        letter-spacing: 0.25em;
+        margin-bottom: 0.3em;
+    }
+
+    h1 {
+        font-size: 2.8em;
+        margin-top: 0.2em;
+        margin-bottom: 0.5em;
+        line-height: 1.5em;
+        letter-spacing: 0.05em;
+    }
+
+    .demo {
+        background: var(--mytheme);
+        color: white;
+        padding: 1em;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 2em;
+        font-size: 1.33em;
+        border-color: var(--mytheme);
+        border-style: solid;
+    }
+
+    .demo:hover {
+        background-color: var(--mybackground);
+        border-color: var(--mytheme);
+        border-style: solid;
+        font-weight: 700;
+        color: var(--mytheme);
+
+    }
+
+    .play-video {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.85em;
+        margin-bottom: 1em;
+
+        img {
+            margin-right: 0.4em;
+            width: 1.5em;
+        }
+    }
+
+}
+
+.hero_image {
+    width: 22em;
+    margin-top: 1.3em;
+    border-radius: 38em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.features {
+    background-color: black;
+    color: white;
+
+    img {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.8em;
+        padding-top: 0.8em;
+        font-size: 1.2em;
+        text-align: left;
+        margin-left: 3.8em;
+
+        li {
+            margin-bottom: 1em;
+            position: relative;
+            margin-left: 1.2em;
+
+            &:before {
+                content: "✅";
+                left: -2em;
+                width: 1em;
+                height: 1em;
+                position: absolute;
+                background-image: url("images/tick.svg");
+                background-size: contain;
+                margin-right: 0.1em;
+            }
+        }
+    }
+
+}
+
+.testimonials {
+    background-color: var(--mytheme);
+    text-align: center;
+    padding-bottom: .3em;
+    padding-top: 3em;
+
+    img {
+        width: 5em;
+        border-radius: 50%;
+        margin-top: -2.5em;
+    }
+
+    ul {
+        li {
+            background-color: var(--mybackground);
+            margin-bottom: 3em;
+            border-radius: 1.2em;
+            padding: 1em;
+            width: 16em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+
+.newsletter {
+    padding-bottom: 1em;
+}
+
+.left-newsletter {
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+
+    h2 {
+        color: var(--mytheme);
+        font-size: 1.8em;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 0.2em;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    input {
+        display: block;
+        margin-bottom: 1em;
+        border-radius: 2em;
+        padding: 0.7em;
+        border: none;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        display: inline-block;
+        background: var(--mytheme);
+        color: white;
+        padding: 0.8em;
+        border-radius: 2em;
+        font-size: 15px;
+        margin-right: 0.7em;
+        font-weight: 600;
+        width: 8em;
+        border: 1em var(--mytheme);
+        margin-left: 0.5em;
+        cursor: pointer;
+    }
+
+    textarea {
+        display: block;
+        margin-bottom: 1.5em;
+        border-radius: 1.2em;
+        padding: 1em;
+        border: none;
+    }
+}
+
+iframe {
+    width: 100%;
+    border-radius: 1.8em;
+}
